@@ -26,7 +26,7 @@ set hlsearch incsearch
 " nmap <silent> <tab> :bn<CR>
 " nmap <silent> <s-tab> :bp<CR>
 
-colorscheme mariana
+colorscheme jellybeans
 
 " pathogen
 execute pathogen#infect()
