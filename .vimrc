@@ -11,9 +11,6 @@ set nobackup noswapfile
 " identacao
 set autoindent
 
-" mouse no terminal
-" set mouse=a
-
 set ignorecase smartcase 
 set nu 
 set ruler
@@ -35,8 +32,8 @@ execute pathogen#infect()
 set laststatus=2
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline_powerline_fonts = 0
-let g:airline_left_sep = ' '
-let g:airline_right_sep = ' '
+" let g:airline_left_sep = ' '
+" let g:airline_right_sep = ' '
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#left_alt_sep = '|'
 
@@ -46,10 +43,4 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|pyc|DS_Store)$',
   \ }
-
-" nerdtree
-let NERDTreeIgnore = ['.*\.pyc$']
-let NERDTreeShowHidden=1
-let NERDTreeShowBookmarks=1
-nmap <silent> <leader>, :execute 'NERDTreeToggle ' . getcwd()<CR>
 
