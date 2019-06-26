@@ -3,16 +3,18 @@ filetype plugin indent on
 
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab scrolloff=10
 
+set laststatus=2
+
 " leader key
 let mapleader = ','
 
-" sem backups
+" no backups
 set nobackup noswapfile
 
-" identacao
+" identation
 set autoindent
 
-" abre novos splits na direita e na base 
+" open new splits on right and bottom 
 set splitbelow
 set splitright
 
@@ -34,9 +36,8 @@ colorscheme jellybeans
 execute pathogen#infect()
 
 " airline
-set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 0
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 0
 " let g:airline_left_sep = ' '
 " let g:airline_right_sep = ' '
 " let g:airline#extensions#tabline#left_sep = ' '
