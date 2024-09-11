@@ -5,6 +5,9 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab scrolloff=10
 
 set laststatus=2
 
+" backspace
+set backspace=indent,eol,start
+
 " leader key
 let mapleader = ','
 
@@ -37,11 +40,4 @@ nnoremap <leader>l :ls<CR>:b<space>
 
 " python
 au filetype python :iabbrev ipdb import ipdb; ipdb.set_trace()
-
-" ctrlp
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|pyc|DS_Store)$',
-  \ }
 
